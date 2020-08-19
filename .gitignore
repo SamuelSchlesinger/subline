@@ -1,0 +1,4 @@
+.ghcid
+.*.swp
+.*.swo
+dist-newstyle/

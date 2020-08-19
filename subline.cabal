@@ -1,0 +1,23 @@
+cabal-version:       >=2.0
+name:                subline
+version:             0.1.0.0
+license:             AllRightsReserved
+license-file:        LICENSE
+author:              Samuel Schlesinger
+maintainer:          samuel@simspace.com
+build-type:          Simple
+extra-source-files:  CHANGELOG.md
+tested-with:         GHC  ==8.10.1 || ==8.10.2 || ==8.8.3 || ==8.8.2 || ==8.8.1 || ==8.6.5 || ==8.6.4 || ==8.6.3 || ==8.6.2 || ==8.6.1
+
+library
+  exposed-modules:     Subline
+  hs-source-dirs:      src
+  build-depends:       base >=4.12
+  default-language:    Haskell2010
+
+test-suite subline-tests
+  type:                detailed-0.9
+  test-module:         Test
+  hs-source-dirs:      test
+  build-depends:       base >=4.12, Cabal >=2.0
+  default-language:    Haskell2010
